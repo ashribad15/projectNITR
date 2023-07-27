@@ -1,0 +1,87 @@
+/* Add this CSS to remove the underlining from anchor tags */
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.first-section {
+  flex: 0 0 70%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center; /* Center the text horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the text vertically */
+}
+
+.first-section h2 {
+  margin-top: 0;
+}
+
+.second-section {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e0e0e0;
+  padding: 20px;
+  justify-content: space-around; /* Distribute items evenly along the main axis */
+  align-items: center; /* Center items along the cross-axis */
+}
+
+.service {
+  flex: 1 0 50%;
+  padding: 20px; /* Increase padding for better spacing */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.service:hover {
+  background-color: #d0d0d0;
+  transform: scale(1.05);
+}
+
+/* Add some additional styles to enhance the appearance */
+
+h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+h3 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 10px; /* Adjust margin for better spacing */
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Optional: Add a subtle box shadow to the services for depth */
+
+.service {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
