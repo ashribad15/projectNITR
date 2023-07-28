@@ -59,6 +59,9 @@ showSlide(slideIndex);
 
 //  Sliding JS end
 
+
+// info js start
+
 function displayDetails(serviceName, details) {
     const firstSection = document.querySelector('.first-section');
     const h2 = firstSection.querySelector('h2');
@@ -80,4 +83,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
   
   
-  
+  // info js start
